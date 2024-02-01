@@ -8,13 +8,16 @@ import { FormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import { TrouverCentreComponent } from './trouver-centre/trouver-centre.component';
 import { ChoixCentreComponent } from './choix-centre/choix-centre.component';
+import { ChoisirComponent } from './choisir/choisir.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     TrouverCentreComponent,
-    ChoixCentreComponent
+    ChoixCentreComponent,
+    ChoisirComponent
   ],
   imports: [
     BrowserModule,

@@ -1,12 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-choisir',
-  standalone: true,
-  imports: [],
   templateUrl: './choisir.component.html',
   styleUrl: './choisir.component.scss'
 })
-export class ChoisirComponent {
+export class ChoisirComponent implements OnInit{
+
+  constructor() {}
+  ngOnInit(): void {}
+
+  searchTerm: string = '';
+
+  performSearch(): void {
+    console.log('Search Term:', this.searchTerm);
+    // Ajoutez votre logique de recherche ici
+  }
+
 
 }
