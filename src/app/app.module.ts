@@ -7,12 +7,14 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import { TrouverCentreComponent } from './trouver-centre/trouver-centre.component';
+import { ChoixCentreComponent } from './choix-centre/choix-centre.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    TrouverCentreComponent
+    TrouverCentreComponent,
+    ChoixCentreComponent
   ],
   imports: [
     BrowserModule,
