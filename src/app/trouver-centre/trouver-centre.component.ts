@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Ville } from '../models/Ville';
 
 
 @Component({
@@ -7,15 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trouver-centre.component.scss']
 })
 export class TrouverCentreComponent implements OnInit{
-  searchTerm: string = '';
+  ville:Ville = new Ville('')
 
   performSearch(): void {
-    console.log('Search Term:', this.searchTerm);
+    console.log('nom de la ville:', this.ville.name);
     // Ajoutez votre logique de recherche ici
   }
   
   constructor() {}
   ngOnInit(): void {}
+
+  onSubmit(){
+    this.performSearch();
+  }
 
 }
 

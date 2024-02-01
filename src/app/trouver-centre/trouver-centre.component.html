@@ -1,5 +1,7 @@
 <div>
-    <input type="text" placeholder="Rechercher..." [(ngModel)]="searchTerm" />
-    <button (click)="performSearch()">Rechercher</button>
-  </div>
+  <form (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="Rechercher..." [(ngModel)]="ville.name" name="ville" />
+    <button type="submit">Rechercher</button>
+  </form>
+</div>
   
