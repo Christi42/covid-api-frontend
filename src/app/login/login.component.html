@@ -1,0 +1,14 @@
+<mat-card>
+    <form (ngSubmit)="onSubmit()">
+        <label>
+            Nom : 
+            <input type="text" [(ngModel)]="personne.nom" name="nom">
+        </label>
+        <br>
+        <label>
+            Prenom : 
+            <input type="text" [(ngModel)]="personne.prenom" name="prenom">
+        </label>
+        <button type="submit">Envoyer</button>
+    </form>
+</mat-card>
