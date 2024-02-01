@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-trouver-centre',
   templateUrl: './trouver-centre.component.html',
-  styleUrl: './trouver-centre.component.scss'
+  styleUrls: ['./trouver-centre.component.scss']
 })
 export class TrouverCentreComponent implements OnInit{
   searchTerm: string = '';
