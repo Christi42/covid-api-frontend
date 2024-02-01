@@ -1,5 +1,5 @@
-<div class="black-border">
-    <div *ngFor="let center of centers">
+<div *ngIf="centers.length!=0" class="black-border">
+    <div *ngFor="let center of centers" class="black-border">
         {{center.name}}
     </div>
     <br>

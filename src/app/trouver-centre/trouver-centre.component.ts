@@ -25,9 +25,11 @@ export class TrouverCentreComponent implements OnInit{
   onSubmit(){
     this.performSearch();
     this.apiService.findVilleByName(this.ville.name).subscribe((data:Ville) =>{
-      this.ville = data
+      this.ville.id = data["id"];
+      this.ville.name = data["name"];
+      this.submitVilleEvent.emit(this.ville);
     })
-    this.submitVilleEvent.emit(this.ville)
+    
   }
 
 }
