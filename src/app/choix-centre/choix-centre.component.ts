@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Ville } from '../models/Ville';
 
 
 @Component({
@@ -8,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChoixCentreComponent implements OnInit{
 
-
+  ville:Ville = new Ville('')
 
   constructor() {}
   ngOnInit(): void {}
+
+  receiveVille(receivedVille:Ville){
+    this.ville = receivedVille;
+  }
 
 }

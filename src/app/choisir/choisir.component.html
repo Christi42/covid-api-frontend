@@ -1,11 +1,6 @@
 <div  class="black-border">
-    <div>
-    <input type="text" placeholder="name" [(ngModel)]="searchTerm" />
-    <button (click)="performSearch()">Rechercher</button>
+    <div *ngFor="let center of centers">
+        {{center.name}}
     </div>
-    <div class="black-border">
-        
-
-    </div>
-
+    <br>
 </div>

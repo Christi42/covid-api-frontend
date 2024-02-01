@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 import { Observable } from "rxjs";
 import { Center } from "../models/Center";
+import { Ville } from "../models/Ville";
 
 @Injectable({
     providedIn: 'root'
@@ -18,5 +19,9 @@ export class ApiService{
 
     getCentersByVille(id:number):Observable<Center[]>{
         return this.http.get<Center[]>(this.apiUrl + id + '/centers')
+    }
+
+    findVilleByName(name:string):Observable<Ville>{
+        return this.http.get<Ville>(this.apiUrl+'villes/'+name)
     }
 }
