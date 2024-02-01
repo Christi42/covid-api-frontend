@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "covid-frontend:build:production"
+              "buildTarget": "covid-frontend:build:production"
             },
             "development": {
-              "browserTarget": "covid-frontend:build:development"
+              "buildTarget": "covid-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "covid-frontend:build"
+            "buildTarget": "covid-frontend:build"
           }
         },
         "test": {
