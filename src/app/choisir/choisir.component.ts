@@ -10,7 +10,7 @@ import { Ville } from '../models/Ville';
 })
 export class ChoisirComponent implements OnInit{
 
-  @Input() ville:Ville = new Ville('')
+  @Input() ville:Ville | null = null
   centers:Center[] = []
 
   constructor(private apiService:ApiService) {}
@@ -27,9 +27,11 @@ export class ChoisirComponent implements OnInit{
   }
 
   getCenters():void{
-    this.apiService.getCentersByVille(this.ville.id).subscribe((data : Center[]) =>{
-      this.centers = data;
-    })
+    if(this.ville!=null){
+      this.apiService.getCentersByVille(this.ville.id).subscribe((data : Center[]) =>{
+        this.centers = data;
+      })
+    }
   }
 
 

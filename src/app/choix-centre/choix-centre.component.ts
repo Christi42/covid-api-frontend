@@ -10,12 +10,14 @@ import { Ville } from '../models/Ville';
 export class ChoixCentreComponent implements OnInit{
 
   ville:Ville = new Ville('')
+  init:Boolean = false
 
   constructor() {}
   ngOnInit(): void {}
 
   receiveVille(receivedVille:Ville){
     this.ville = receivedVille;
+    this.init = true;
   }
 
 }
