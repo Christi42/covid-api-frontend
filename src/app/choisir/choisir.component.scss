@@ -6,3 +6,12 @@
   align-items: center; /* centre le contenu horizontalement */
   justify-content: center; /* centre le contenu verticalement */
   }
+
+.bouton-texte {
+  display: flex;
+      align-items: center;
+    border: 2px;
+}
+
+.marge-droite {margin-left: 1px; /* Ajoutez une marge à droite pour l'espace entre le texte et le bouton */
+}
