@@ -9,6 +9,8 @@ import { MatCardModule } from '@angular/material/card';
 import { TrouverCentreComponent } from './trouver-centre/trouver-centre.component';
 import { ChoixCentreComponent } from './choix-centre/choix-centre.component';
 import { ChoisirComponent } from './choisir/choisir.component';
+import { RendezVousComponent } from './rendez-vous/rendez-vous.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -17,14 +19,16 @@ import { ChoisirComponent } from './choisir/choisir.component';
     LoginComponent,
     TrouverCentreComponent,
     ChoixCentreComponent,
-    ChoisirComponent
+    ChoisirComponent,
+    RendezVousComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
