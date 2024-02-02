@@ -12,6 +12,7 @@ export class TrouverCentreComponent implements OnInit{
   @Output() submitVilleEvent = new EventEmitter<Ville>()
 
   ville:Ville = new Ville('')
+  afficher_choix_ville: boolean =false;
 
   performSearch(): void {
     console.log('nom de la ville:', this.ville.name);
@@ -30,6 +31,10 @@ export class TrouverCentreComponent implements OnInit{
       this.submitVilleEvent.emit(this.ville);
     })
     
+  }
+
+  afficher_choix() {
+    this.afficher_choix_ville = true;
   }
 
 }

@@ -34,7 +34,7 @@ export class ChoisirComponent implements OnInit{
     }
   }
 
-  texte: string = "Texte à côté du bouton";
+  adresse: string = "Texte à côté du bouton";
 
   onClick() {
     console.log("Le bouton a été cliqué !");

@@ -1,9 +1,11 @@
 <div class="black-border">
   <div>Trouver un centre de vaccination</div>
 <div>
-  <form (ngSubmit)="onSubmit()">
+  <form (ngSubmit)="onSubmit()" >
     <input type="text" placeholder="Dans quelle ville ?" [(ngModel)]="ville.name" name="ville" />
-    <button type="submit">Rechercher</button>
+    <button (click)="afficher_choix()" type="submit">Rechercher</button>
+  
+    <app-choisir *ngIf="afficher_choix_ville"></app-choisir>
   </form>
 </div>
 </div> 
