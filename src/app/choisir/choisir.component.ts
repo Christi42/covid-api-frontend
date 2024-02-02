@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Center } from '../models/Center';
 import { ApiService } from '../services/ApiService';
 import { Ville } from '../models/Ville';
@@ -10,13 +10,13 @@ import { Ville } from '../models/Ville';
 })
 export class ChoisirComponent implements OnInit{
 
-  @Input() ville:Ville | null = null
-  centers:Center[] = []
+  @Input() centers:Center[] = [];
+  
 
   constructor(private apiService:ApiService) {}
 
   ngOnInit(): void {
-    this.getCenters()
+    // this.getCenters()
   }
 
   searchTerm: string = '';
@@ -26,13 +26,13 @@ export class ChoisirComponent implements OnInit{
     // Ajoutez votre logique de recherche ici
   }
 
-  getCenters():void{
-    if(this.ville!=null){
-      this.apiService.getCentersByVille(this.ville.id).subscribe((data : Center[]) =>{
-        this.centers = data;
-      })
-    }
-  }
+  // getCenters():void{
+  //   if(this.ville!=null){
+  //     this.apiService.getCentersByVille(this.ville.id).subscribe((data : Center[]) =>{
+  //       this.centers = data;
+  //     })
+  //   }
+  // }
 
   adresse: string = "Texte à côté du bouton";
 

@@ -1,9 +1,13 @@
-<div *ngIf="centers.length!=0" class="black-border">
-    <div *ngFor="let center of centers" class="black-border">
-        {{center.name}}
-        <div class="bouton-texte">
-        <span style="margin-right: 10px;">{{adresse}}</span>
-        <button (click)="onClick()">Choisir</button>
+<div *ngIf="centers.length!=0">
+    <div *ngFor="let center of centers">
+        <div class="black-border">
+            {{center.name}}
+            <div class="bouton-texte">
+                <span style="margin-right: 10px;">{{adresse}}</span>
+                <button (click)="onClick()">Choisir</button>
+            </div>
         </div>
+        <br>
     </div>
+    <br>
 </div>

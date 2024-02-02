@@ -5,7 +5,8 @@ import { ChoixCentreComponent } from './choix-centre/choix-centre.component';
 
 const routes: Routes = [
   {path:"login", component:LoginComponent},
-  {path: "choix_centre", component:ChoixCentreComponent}
+  {path: "choix_centre", component:ChoixCentreComponent},
+  {path: "choix_centre/:ville", component:ChoixCentreComponent}
 ];
 
 @NgModule({

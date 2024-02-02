@@ -1,3 +1,7 @@
-<app-trouver-centre (submitVilleEvent)="receiveVille($event)"> </app-trouver-centre>
-<app-choisir *ngIf="init" [ville]="ville"></app-choisir>
-<app-choisir></app-choisir>
+<div class="black-border">
+    <!-- <app-trouver-centre (submitVilleEvent)="receiveVille($event)"> </app-trouver-centre> -->
+    <app-trouver-centre> </app-trouver-centre>
+    <br>
+    <app-choisir *ngIf="init" [centers]="centers"></app-choisir>
+    <!-- <app-choisir *ngIf="init" [centers] = "centers"></app-choisir> -->
+</div>

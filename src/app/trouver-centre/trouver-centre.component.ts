@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Ville } from '../models/Ville';
 import { ApiService } from '../services/ApiService';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -19,23 +20,26 @@ export class TrouverCentreComponent implements OnInit{
     // Ajoutez votre logique de recherche ici
   }
   
-  constructor(private apiService:ApiService) {}
+  constructor(private apiService:ApiService, private router:Router, private route:ActivatedRoute) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.route.params.subscribe(params =>{
+      this.ville.name = params['ville']
+    })
+  }
 
   onSubmit(){
     this.performSearch();
-    this.apiService.findVilleByName(this.ville.name).subscribe((data:Ville) =>{
-      this.ville.id = data["id"];
-      this.ville.name = data["name"];
-      this.submitVilleEvent.emit(this.ville);
-    })
+    //this.submitVilleEvent.emit(this.ville);
+    this.router.navigate(['/choix_centre',this.ville.name]);
+    //Passer la ville dans la route
+  }
+
+  // this.apiService.findVilleByName(this.ville.name).subscribe((data:Ville) =>{
+  //   this.ville.id = data["id"];
+  //   this.ville.name = data["name"];
+  //   this.submitVilleEvent.emit(this.ville);
     
-  }
-
-  afficher_choix() {
-    this.afficher_choix_ville = true;
-  }
-
+  // })
 }
 
