@@ -99,7 +99,9 @@
               "src/app/choix-centre.component.scss",
               "src/app/choisir.component.scss",
               "src/app/trouver-centre.component.scss",
-              "src/app/rendez-vous.component.scss"
+              "src/app/rendez-vous.component.scss",
+              "src/app/connexion.component.scss",
+              "src/app/centres.component.scss"
 
             ],
             "scripts": []

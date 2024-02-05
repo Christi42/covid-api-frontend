@@ -1,0 +1,53 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+
+.white-border {
+    width: 700px;
+    border: 0.5px solid pink;
+    padding: 10px; /* Ajoutez un remplissage si nécessaire pour l'espace à l'intérieur de la bordure */
+    display: inline-flex;
+  flex-direction: column; /* ou row selon vos besoins */
+  align-items: center; /* centre le contenu horizontalement */
+  justify-content: center; /* centre le contenu verticalement */
+  }
+
+  .div2 {
+    margin-left: 20px; /* Ajoutez la marge fixe souhaitée ici */
+  }
+
+  .div1 {
+    margin-right: 20px; /* Ajoutez la marge fixe souhaitée ici */
+  }
+
+  .black-border {
+    border: 0.5px solid black;
+    padding: 10px; /* Ajoutez un remplissage si nécessaire pour l'espace à l'intérieur de la bordure */
+    display: inline-flex;
+  flex-direction: column; /* ou row selon vos besoins */
+  align-items: center; /* centre le contenu horizontalement */
+  justify-content: center; /* centre le contenu verticalement */
+  }
+
+  .property-button {
+    background-color: transparent;
+      border: none;
+      //padding: 10px 20px; /* Ajustez les marges selon vos besoins */
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      //margin: 4px 2px;
+      cursor: pointer
+  }
+
+  .property-icon {
+    color:black;
+    cursor: pointer
+  }
+
+  .property-icon:hover {
+    color: rgba(61, 64, 65, 0.696);
+  }
+
+  span {
+    font-size: 24px; /* Adjust the size as needed */
+    color: blue;     /* Adjust the color as needed */
+  }

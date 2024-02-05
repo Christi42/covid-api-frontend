@@ -1,0 +1,41 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+
+.black-border {
+    border: 0.5px solid black;
+    padding: 10px; /* Ajoutez un remplissage si nécessaire pour l'espace à l'intérieur de la bordure */
+    display: inline-flex;
+  flex-direction: column; /* ou row selon vos besoins */
+  align-items: center; /* centre le contenu horizontalement */
+  justify-content: center; /* centre le contenu verticalement */
+  }
+
+  .custom-cadre {
+    border: 0.5px solid black;
+    padding: 10px;
+    background-color: #eef2f4;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  
+  .custom-cadre:hover {
+    background-color: #dee2e4;
+  }
+
+  .custom-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  
+  .custom-button:hover {
+    background-color: #0d13190c;
+  }
+
+  

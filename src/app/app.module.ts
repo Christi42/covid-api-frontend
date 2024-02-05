@@ -11,6 +11,11 @@ import { ChoixCentreComponent } from './choix-centre/choix-centre.component';
 import { ChoisirComponent } from './choisir/choisir.component';
 import { RendezVousComponent } from './rendez-vous/rendez-vous.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ConnexionComponent } from './connexion/connexion.component';
+import { CentresComponent } from './centres/centres.component';
+import {MatIconModule} from '@angular/material/icon';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 
 @NgModule({
@@ -20,7 +25,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TrouverCentreComponent,
     ChoixCentreComponent,
     ChoisirComponent,
-    RendezVousComponent
+    RendezVousComponent,
+    ConnexionComponent,
+    CentresComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -28,7 +36,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     MatCardModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatIconModule,
+    FontAwesomeModule,
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

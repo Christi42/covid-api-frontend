@@ -8,41 +8,41 @@
     
     <!-- mon-formulaire.component.html -->
     <form (ngSubmit)="onSubmit()">
-        <div class="form-group col">
-        <label for="nom" class="col-sm-2 col-form-label">Nom :</label>
-        <div class="row-sm-4">
-            <input type="text" id="nom" [(ngModel)]="nom" name="nom" class="form-control" required>
-        </div>
-        </div>
-    
-        <div class="form-group col">
-        <label for="prenom" class="col-sm-2 col-form-label">Prénom :</label>
-        <div class="row-sm-4">
-            <input type="text" id="prenom" [(ngModel)]="prenom" name="prenom" class="form-control" required>
-        </div>
-        </div>
+        <div class="container">
+            <div class="d-flex">
+              <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" [(ngModel)]="nom" name="nom" class="form-control" required>
+              </div>
+              <div class="div2">
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" [(ngModel)]="prenom" name="prenom" class="form-control" required>
+              </div>
+            </div>
+          </div>
+
 
         <div class="form-group row">
         <label for="email" class="col-sm-2 col-form-label">Email :</label>
-        <div class="col-sm-4">
+        <div class="col-sm-2">
             <input type="email" id="email" [(ngModel)]="email" name="prenom" class="form-control" required>
         </div>
         </div>
         
-        <div class="form-group row">
+        <div class="form-group row mb-4">
         <label for="date" class="col-sm-2 col-form-label">Date :</label>
-        <div class="col-sm-4">
+        <div class="col-sm-2">
             <input type="date" id="date" [(ngModel)]="date" name="date" class="form-control" required>
         </div>
         </div>
     
         <!-- Autres champs de formulaire ici -->
-    
-        <div class="form-group row">
-        <div class="offset-sm-2 col-sm-10">
+        
+        <div class="d-flex mb-2">
+        <div class="form-group">
             <button type="submit" class="btn btn-primary">Envoyer</button>
         </div>
-        <div class="offset-sm-7 col-sm-10">
+        <div class="div2">
             <button type="submit" class="btn btn-primary">Annuler</button>
         </div>
         </div>
