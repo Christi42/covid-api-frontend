@@ -15,6 +15,7 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { CentresComponent } from './centres/centres.component';
 import {MatIconModule} from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CentresPersonnelComponent } from './centres-personnel/centres-personnel.component';
 
 
 
@@ -28,6 +29,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     RendezVousComponent,
     ConnexionComponent,
     CentresComponent,
+    CentresPersonnelComponent
     
   ],
   imports: [
