@@ -1,0 +1,8 @@
+<div class="black-border">
+    {{center?.name}}
+    <br>
+    <div class="bouton-texte">
+        <span style="margin-right: 10px;">{{center?.adresse}}, {{center?.code}} {{center?.ville?.name}}</span>
+        <button *ngIf="afficher" (click)="onClick()">Choisir</button>
+    </div>
+</div>

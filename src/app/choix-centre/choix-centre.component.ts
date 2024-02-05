@@ -15,9 +15,19 @@ export class ChoixCentreComponent implements OnInit{
   ville:Ville = new Ville('')
   centers:Center[] = []
   init:Boolean = false
+  // reservation:Boolean = false
+  selected:Center | null = null
 
   constructor(private route:ActivatedRoute, private apiService:ApiService) {}
   ngOnInit(): void {
+    let segments = this.route.snapshot.url;
+    let last = segments[segments.length - 1].path;
+    if(last === "reservation"){
+      // this.reservation = true
+      const id = this.route.snapshot.params['id'];
+      this.selected = this.getCenter(id)
+      console.log(this.selected)
+    }
     this.route.params.subscribe(params =>{
       this.ville.name = params['ville'];
       if(params['ville']){
@@ -37,6 +47,15 @@ export class ChoixCentreComponent implements OnInit{
   receiveVille(receivedVille:Ville){
     this.ville = receivedVille;
     this.init = true;
+  }
+
+  getCenter(id:number):Center | null{
+    for(let center of this.centers){
+      if(center.id == id){
+        return center;
+      }
+    }
+    return null;
   }
 
 }

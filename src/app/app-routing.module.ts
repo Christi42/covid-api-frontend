@@ -8,6 +8,7 @@ const routes: Routes = [
   {path:"login", component:LoginComponent},
   {path: "choix_centre", component:ChoixCentreComponent},
   {path: "choix_centre/:ville", component:ChoixCentreComponent},
+  {path: "choix_centre/:ville/centers/:id/reservation", component:ChoixCentreComponent},
   {path: "connexion", component:ConnexionComponent}
 ];
 

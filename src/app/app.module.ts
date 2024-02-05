@@ -14,7 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { CentresComponent } from './centres/centres.component';
 import {MatIconModule} from '@angular/material/icon';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CenterComponent } from './center/center.component';
+import {MatDialogModule} from '@angular/material/dialog';
 import { CentresPersonnelComponent } from './centres-personnel/centres-personnel.component';
 
 
@@ -29,6 +30,7 @@ import { CentresPersonnelComponent } from './centres-personnel/centres-personnel
     RendezVousComponent,
     ConnexionComponent,
     CentresComponent,
+    CenterComponent,
     CentresPersonnelComponent
     
   ],
@@ -40,8 +42,7 @@ import { CentresPersonnelComponent } from './centres-personnel/centres-personnel
     HttpClientModule,
     BrowserAnimationsModule,
     MatIconModule,
-    FontAwesomeModule,
-    
+    MatDialogModule
 
   ],
   providers: [],
