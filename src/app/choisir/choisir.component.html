@@ -1,12 +1,6 @@
 <div *ngIf="centers.length!=0">
     <div *ngFor="let center of centers">
-        <div class="black-border">
-            {{center.name}}
-            <div class="bouton-texte">
-                <span style="margin-right: 10px;">{{adresse}}</span>
-                <button (click)="onClick()">Choisir</button>
-            </div>
-        </div>
+        <app-center [afficher]="true" [center]="center"></app-center>
         <br>
     </div>
     <br>

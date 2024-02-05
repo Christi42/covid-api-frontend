@@ -10,6 +10,8 @@ export class Center{
     admin:Admin;
     doctors:Doctor[];
     reservations:Reservation[];
+    adresse:string;
+    code:number;
 
     constructor(id:number, name:string, ville:Ville, admin:Admin){
         this.id = id;
@@ -18,5 +20,7 @@ export class Center{
         this.ville = ville;
         this.doctors = [];
         this.reservations = [];
+        this.adresse = "";
+        this.code = 0;
     }
 }
