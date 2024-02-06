@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from "rxjs";
 import { Center } from "../models/Center";
 import { Ville } from "../models/Ville";
+import { Reservation } from "../models/Reservation";
 
 @Injectable({
     providedIn: 'root'
@@ -23,5 +24,9 @@ export class ApiService{
 
     findVilleByName(name:string):Observable<Ville>{
         return this.http.get<Ville>(this.apiUrl+'villes/'+name)
+    }
+
+    book(reservation:Reservation, centerId:number):Observable<Reservation>{
+        return this.http.post<Reservation>(this.apiUrl+'books?center_id='+centerId, reservation);
     }
 }

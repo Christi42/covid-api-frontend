@@ -8,9 +8,9 @@ import { Personne } from '../models/Personne';
 })
 export class LoginComponent {
 
-  personne:Personne = new Personne('','');
+  personne:Personne = new Personne('','','');
 
   onSubmit(){
-    console.log("nom : "+this.personne.nom+"prénom : "+this.personne.prenom)
+    console.log("nom : "+this.personne.name+"prénom : "+this.personne.prenom)
   }
 }
