@@ -1,0 +1,6 @@
+<div class="row justify-content-between">
+    <div class="custom-button btn-group col-md-4" *ngFor="let choice of choices">
+        <button type="button" class="btn btn-white" style="text-align: left;" (click)="onClick(choice)">{{choice}}</button>
+        <mat-icon>arrow_right</mat-icon>
+    </div>
+</div>

@@ -17,6 +17,9 @@ import {MatIconModule} from '@angular/material/icon';
 import { CenterComponent } from './center/center.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { CentresPersonnelComponent } from './centres-personnel/centres-personnel.component';
+import { MenuComponent } from './menu/menu.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { AdminCentresComponent } from './admin-centres/admin-centres.component';
 
 
 
@@ -31,7 +34,9 @@ import { CentresPersonnelComponent } from './centres-personnel/centres-personnel
     ConnexionComponent,
     CentresComponent,
     CenterComponent,
-    CentresPersonnelComponent
+    CentresPersonnelComponent,
+    MenuComponent,
+    AdminCentresComponent
     
   ],
   imports: [
@@ -42,7 +47,8 @@ import { CentresPersonnelComponent } from './centres-personnel/centres-personnel
     HttpClientModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatDialogModule
+    MatDialogModule,
+    MatGridListModule
 
   ],
   providers: [],

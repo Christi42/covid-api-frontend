@@ -1,9 +1,5 @@
-export class Admin{
-    id:number;
-    name:string;
+import { User } from "./User";
 
-    constructor(id:number, name:string){
-        this.id = id;
-        this.name = name;
-    }
+export class Admin extends User{
+
 }

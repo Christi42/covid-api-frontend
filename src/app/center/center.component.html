@@ -1,8 +1,13 @@
 <div class="black-border">
     {{center?.name}}
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+
     <br>
     <div class="bouton-texte">
         <span style="margin-right: 10px;">{{center?.adresse}}, {{center?.code}} {{center?.ville?.name}}</span>
+        <button class="property-button">
+            <mat-icon class="property-icon">group</mat-icon>
+        </button>
         <button *ngIf="afficher" (click)="onClick()">Choisir</button>
     </div>
 </div>

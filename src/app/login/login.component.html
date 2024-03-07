@@ -1,13 +1,13 @@
 <mat-card>
     <form (ngSubmit)="onSubmit()">
         <label>
-            Nom : 
-            <input type="text" [(ngModel)]="personne.name" name="nom">
+            Adresse mail : 
+            <input type="text" [(ngModel)]="login.mail" name="mail">
         </label>
         <br>
         <label>
-            Prenom : 
-            <input type="text" [(ngModel)]="personne.prenom" name="prenom">
+            Mot de passe : 
+            <input type="text" [(ngModel)]="login.password" name="password">
         </label>
         <button type="submit">Envoyer</button>
     </form>
