@@ -20,6 +20,7 @@ import { CentresPersonnelComponent } from './centres-personnel/centres-personnel
 import { MenuComponent } from './menu/menu.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { AdminCentresComponent } from './admin-centres/admin-centres.component';
+import { PlanningComponent } from './planning/planning.component';
 
 
 
@@ -36,7 +37,8 @@ import { AdminCentresComponent } from './admin-centres/admin-centres.component';
     CenterComponent,
     CentresPersonnelComponent,
     MenuComponent,
-    AdminCentresComponent
+    AdminCentresComponent,
+    PlanningComponent
     
   ],
   imports: [
@@ -48,7 +50,7 @@ import { AdminCentresComponent } from './admin-centres/admin-centres.component';
     BrowserAnimationsModule,
     MatIconModule,
     MatDialogModule,
-    MatGridListModule
+    MatGridListModule,
 
   ],
   providers: [],

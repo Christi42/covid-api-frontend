@@ -1,0 +1,19 @@
+<div class="black-border" style="width: 700px;">Planning works!
+<div>
+
+<div><a class="centered" href="javascript:void(0)"(click)="createTable()">Create Table</a>
+<!-- Table that will be displayed when the hyperlink is clicked -->
+
+<div class="d-flex mt-3" style="margin-right: auto;">
+    <div class="div1" >
+      <input type="text" class="form-control" placeholder="Filtrer" style="width: 300px; height: 40px;">
+    </div>
+    <div>
+      <button class="btn btn-primary">Nouveau</button>
+    </div>
+  </div>
+<table *ngIf="showTable">
+    <!-- Table content goes here -->
+  </table>
+
+</div>

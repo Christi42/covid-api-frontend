@@ -1,0 +1,42 @@
+.black-border {
+    border: 0.5px solid black;
+    padding: 10px; /* Ajoutez un remplissage si nécessaire pour l'espace à l'intérieur de la bordure */
+    display: inline-flex;
+  flex-direction: column; /* ou row selon vos besoins */
+  align-items: center; /* centre le contenu horizontalement */
+  justify-content: center; /* centre le contenu verticalement */
+  }
+
+  table {
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.property-button {
+    background-color: transparent;
+      border: none;
+      //padding: 10px 20px; /* Ajustez les marges selon vos besoins */
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      //margin: 4px 2px;
+      cursor: pointer
+  }
+
+  .property-icon {
+    color:black;
+    cursor: pointer
+  }
+
+  .property-icon:hover {
+    color: rgba(61, 64, 65, 0.696);
+  }
